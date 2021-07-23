@@ -13,6 +13,7 @@ pip3 install -r requirements.txt
 ```
 export UCI=12345678
 export CTZ_PASS=your_password
+export AWS_DEFAULT_REGION=ca-central-1
 ```
 
 This script is using the data from the new status tracker: (https://cst-ssc.apps.cic.gc.ca/en/login)
