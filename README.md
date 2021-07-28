@@ -16,4 +16,9 @@ export CTZ_PASS=your_password
 export AWS_DEFAULT_REGION=ca-central-1
 ```
 
+**Notification for Mac Users**
+
+- Install `gem install terminal-notifier`
+- Add new environment variable `export NOTIFY=True`
+
 This script is using the data from the new status tracker: (https://cst-ssc.apps.cic.gc.ca/en/login)
