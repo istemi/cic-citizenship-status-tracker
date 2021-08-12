@@ -11,11 +11,9 @@ password = os.environ.get('CTZ_PASS')
 notification = os.environ.get('NOTIFY')
 
 def notify(title, subtitle, message):
-    t = '-title {!r}'.format(title)
-    s = '-subtitle {!r}'.format(subtitle)
-    m = '-message {!r}'.format(message)
-    sound = '-sound default'
-    os.system('/usr/local/bin/terminal-notifier {}'.format(' '.join([m, t, s, sound])))
+    os.system("""
+              osascript -e 'display notification "{}" with title "{}" subtitle "{}" sound name \"Submarine\"'
+              """.format(message, title, subtitle))
 
 def citizenship_tracker(username: str, password: str, 
                                app_client_id: str) -> None:
